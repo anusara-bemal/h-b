@@ -3,7 +3,8 @@ const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'placehold.co', 'via.placeholder.com', 'dummyimage.com', 'picsum.photos']
+    domains: ['localhost', 'placehold.co', 'via.placeholder.com', 'dummyimage.com', 'picsum.photos'],
+    unoptimized: true
   },
   typescript: {
     ignoreBuildErrors: true,
