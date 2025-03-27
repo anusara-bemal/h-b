@@ -1,6 +1,5 @@
-import { redirect } from 'next/navigation';
-import { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
 
-export function GET(request: NextRequest) {
-  redirect('/admin/dashboard');
+export async function GET() {
+  return NextResponse.redirect(new URL("/admin/dashboard", process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"));
 } 
