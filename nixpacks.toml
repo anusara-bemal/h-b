@@ -1,0 +1,12 @@
+[phases.setup]
+nixpkgs = ['nodejs']
+
+[phases.install]
+cmds = ['npm ci --force']
+
+[phases.build]
+cmds = ['npm run build']
+
+[start]
+cmd = 'npm run start'
+env = { PORT = "3000" } 
